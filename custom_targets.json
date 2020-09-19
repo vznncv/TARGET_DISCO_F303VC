@@ -1,0 +1,48 @@
+{
+    "DISCO_F303VC": {
+        "inherits": [
+            "MCU_STM32"
+        ],
+        "supported_toolchains": [
+            "GCC_ARM"
+        ],
+        "supported_form_factors": [
+        ],
+        "core": "Cortex-M4F",
+        "extra_labels_add": [
+            "STM32F3",
+            "STM32F303",
+            "STM32F303xC",
+            "STM32F303VC"
+        ],
+        "macros_add": [
+            "STM32F303xC"
+        ],
+        "config": {
+            "clock_source": {
+                "help": "Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSI",
+                "value": "USE_PLL_HSE_EXTC|USE_PLL_HSI",
+                "macro_name": "CLOCK_SOURCE"
+            }
+        },
+        "detect_code": [
+            "0746"
+        ],
+        "device_has_add": [
+            "ANALOGOUT",
+            "SERIAL_ASYNCH",
+            "FLASH",
+            "CAN",
+            "CRC",
+            "MPU"
+        ],
+        "device_name": "STM32F303VC",
+        "release_versions": [
+            "5",
+            "6"
+        ],
+        "overrides": {
+            "default-adc-vref": "3.0f"
+        }
+    }
+}
